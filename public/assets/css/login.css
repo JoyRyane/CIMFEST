@@ -2,8 +2,8 @@
     position: absolute;
     background: #563495;
     align-items: center;
-    width: 640px;
-    height: 520px;
+    width: 800px;
+    height: 650px;
     justify-content: center;
     margin-top: 40px;
     margin-left: 400px;
@@ -12,17 +12,19 @@
 }
 img{
     position: absolute;
-    width: 340px;
-    height: 530px;
-    margin-top: 35px;
-    margin-left:350px;
+    width: 400px;
+    height: 670px;
+    margin-top: 30px;
+    margin-left:390px;
 }
 .container form,.container h2,.container p{
-    margin-left: 330px;
-    margin-top: 30px;
+    margin-left: 450px;
 }
 .container h2,.container p{
     color: white;
+}
+.container h2{
+    margin-top: 100px;
 }
 label{
     color: white;
@@ -31,18 +33,25 @@ input{
     width: 80%;
     border: 1px solid white;
     border-radius: 5px;
+    height: 25px;
 }
 button{
     width: 81%;
+    height: 25px;
     color: #563495;
     background: #FFFFFF;
     border: 1px solid white;
     border-radius: 5px;
 }
+button:hover{
+    background-color: #563495;
+    color: #FFFFFF;
+}
 .sign_up{
     color: white;
     margin-left: 20px;
 }
+
 .sign_up a{
     color: white;
     text-decoration: none;
@@ -51,6 +60,7 @@ button{
     text-decoration: underline;
 }
 select{
-    width: 80%;
+    width: 82%;
+    height: 30px;
     border-radius:5px;
 }

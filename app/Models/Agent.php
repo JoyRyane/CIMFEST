@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Agent extends Model
 {
     use HasFactory;
+    protected $table = "agents";
+    protected $fillable =[
+        'name',
+        'email',
+        'phone',
+        'social_media',
+        'password',
+    ];
 }

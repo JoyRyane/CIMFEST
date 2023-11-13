@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('email');
             $table->string('active_social_media_accounts');
+            $table->string('password');
             $table->timestamps();
         });
     }

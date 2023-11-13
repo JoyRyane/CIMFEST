@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\web\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace' => 'web'], function(){
+Route::group(['namespace' => 'web'], function()
+{
     Route::get('/', 'PageController@index')->name('home'); 
     Route::get('/artist_dashboard','PageController@artist')->name('artist_dashboard');
     Route::get('/agent_registration','PageController@agentRegistration')->name('agent_registration');
     Route::get('/artist_registration','PageController@artistRegistration')->name('artist_registration');
     Route::get('/login','PageController@login')->name('login');
+    // Route::post('/artist','PageController@create_artist')->name('create_artist');
+    Route::post('/agent','PageController@create_agent')->name('create_agent');
 }); 
