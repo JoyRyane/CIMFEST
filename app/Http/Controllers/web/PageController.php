@@ -17,15 +17,19 @@ class PageController extends Controller
 
         return view('home');
     }
+
     public function artist(){
         return view('artist_dashboard');
     }
+
     public function agentRegistration(){
         return view('agent_registration');
     }
+
     public function artistRegistration(){
         return view('artist_registration');
     }
+    
     public function login(){
         return view('login');
     }

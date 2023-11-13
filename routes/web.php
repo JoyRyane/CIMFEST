@@ -14,8 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::group(['namespace' => 'web'], function()
 {
+=======
+Route::group(['namespace' => 'Artist' , 'prefix' => 'dashboard'], function(){
+    Route::get('/', 'ArtistController@getDashboard')->name('dashboard'); 
+    Route::get('/playlist', 'ArtistController@playList')->name('playlist'); 
+    Route::get('/user-dashboard', 'ArtistController@userDashboard')->name('user-dashboard'); 
+}); 
+
+Route::group(['namespace' => 'web'], function(){
+>>>>>>> 0f545a2e6da587cb55f436b75c1d5db2e37574a7
     Route::get('/', 'PageController@index')->name('home'); 
     Route::get('/artist_dashboard','PageController@artist')->name('artist_dashboard');
     Route::get('/agent_registration','PageController@agentRegistration')->name('agent_registration');
