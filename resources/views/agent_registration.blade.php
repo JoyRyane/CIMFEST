@@ -1,7 +1,12 @@
-@extends('layouts.app')
-@section('title', 'Home')
-@section('content')
-<div class="container">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AGENT REGISTRATION</title>
+        <link href="{{ asset('assets/css/agent_registration.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
         <h2>AGENT Registration</h2>
         <p>Make money by creating content for our artist</p>
         <form action="agent_registration.php" method="POST">
@@ -28,5 +33,6 @@
 
         </form>
         </div>
-        <img src="pictures/agent_registration.png" alt="registration photo">
-        @endsection
+        <img src="{{ asset('assets/images/agent_registration.png') }}" alt="registration photo">
+    </body>
+</html>

@@ -1,0 +1,55 @@
+.container{
+    position: absolute;
+    background: #563495;
+    align-items: center;
+    width: 640px;
+    height: 520px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 400px;
+    border-radius: 10px;
+    
+}
+img{
+    position: absolute;
+    width: 340px;
+    height: 530px;
+    margin-top: 35px;
+    margin-left:350px;
+}
+.container form,.container h2,.container p{
+    margin-left: 330px;
+}
+.container h2,.container p{
+    color: white;
+}
+label{
+    color: white;
+}
+input{
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+button{
+    width: 81%;
+    color: #563495;
+    background: #FFFFFF;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.signin{
+    color: white;
+    margin-left: 20px;
+}
+.signin a{
+    color: white;
+    text-decoration: none;
+}
+.signin a:hover{
+    text-decoration: underline;
+}
+select{
+    width: 80%;
+    border-radius:5px;
+}

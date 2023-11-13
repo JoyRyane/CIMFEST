@@ -1,7 +1,12 @@
-@extends('layouts.app')
-@section('title', 'Home')
-@section('content')
-<div class="container">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Agent LOGIN</title>
+        <link href="{{ asset('assets/css/login.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
         <h2>Agent Login</h2>
         <p>Keep streaming heart warming music</p>
 
@@ -17,11 +22,12 @@
             </select><br><br>
 
             <label for="password">Password</label><br>
-            <input name="password" type="password" placeholder="********"><br><br>
+            <input name="password" type="password" placeholder="********"><br><br><br>
 
-            <button type="submit" name="login">Login</button><br><br>
-            <div class="signup">Don't have an account? <a href="#" class="register_link">Sign Up</a></div>
+            <button type="submit" name="login">Login</button><br><br><br>
+            <div class="sign_up">Don't have an account? <a href="#" class="register_link">Sign Up</a></div>
         </form>
         </div>
-        <img src="pictures/artist_registration.png" alt="registration photo">
-        @endsection
+        <img src="{{ asset('assets/images/artist_registration.png') }}" alt="registration photo">
+    </body>
+</html>

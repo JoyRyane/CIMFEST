@@ -1,7 +1,12 @@
-@extends('layouts.app')
-@section('title', 'Home')
-@section('content')
-<div class="container">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ARTIST REGISTRATION</title>
+        <link href="{{ asset('assets/css/artist_registration.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
         <h2>Artist Registration</h2>
         <p>Upload your songs to make people feel good</p>
         <form action="artist_registration.php" method="POST">
@@ -32,5 +37,6 @@
 
         </form>
         </div>
-        <img src="pictures/artist_registration.png" alt="registration photo">
-        @endsection
+        <img src="{{ asset('assets/images/artist_registration.png') }}" alt="registration photo">
+    </body>
+</html>
