@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['namespace' => 'Artist' , 'prefix' => 'dashboard'], function(){
+    Route::get('/', 'ArtistController@getDashboard')->name('dashboard'); 
+    Route::get('/playlist', 'ArtistController@playList')->name('playlist'); 
+    Route::get('/user-dashboard', 'ArtistController@userDashboard')->name('user-dashboard'); 
+}); 
+
 Route::group(['namespace' => 'web'], function(){
     Route::get('/', 'PageController@index')->name('home'); 
     Route::get('/artist_dashboard','PageController@artist')->name('artist_dashboard');

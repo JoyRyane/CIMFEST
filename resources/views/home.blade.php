@@ -9,7 +9,8 @@
                 </div>
                 <div class="col-span-1 md:order-1">
                     <h1 class="text-center md:text-left">Where Words Fail, Music Speaks</h1>
-                    <h6 class="text-center md:text-left">The most exciting rhythms seem unexpected and complex, the most beautiful melodies simple and inevitable</h6><br><br>
+                    <h6 class="text-center md:text-left">The most exciting rhythms seem unexpected and complex, the most
+                        beautiful melodies simple and inevitable</h6><br><br>
                     <div class="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start gap-4">
                         <button class="btn btn-primary">Register an artist</button>
                         <button class="btn btn-primary-bold">Become an Agent</button>
@@ -22,13 +23,13 @@
             </div>
         </div>
     </section>
-    
+
     <section class="home-wrapper px-4 md:px-0">
         <div class="container mx-auto">
             <div class="flex justify-between items-center mb-8">
                 <h4 class="bold">Trending Songs</h4>
             </div>
-            <div class="owl-carousel owl-theme carousel">
+            <div class="owl-carousel owl-theme carousel ">
                 <div class="item">
                     <div><img src="{{ asset('assets/images/home-trending-1.png') }}" alt=""></div>
                     <div class="flex justify-between items-center mt-2 mx-2 ml-4">
@@ -92,19 +93,19 @@
             </div>
         </div>
     </section>
-    
+
     <section class="most-popular">
         <div class="container mx-auto px-4 md:px-0">
             <div class="flex justify-between items-center mb-8">
                 <h4 class="bold">Most Popular Album</h4>
-                <button class="btn btn-tertiary w-64"><img src="{{ asset('assets/icons/icons8_download 1.svg') }}" alt="">Seel All</button>
+                <button class="btn btn-tertiary w-64"><img src="{{ asset('assets/icons/icons8_download 1.svg') }}"
+                        alt="">Seel All</button>
             </div>
             <div class="flex flex-wrap gap-5">
                 <div class="grid grid-cols-2  gap-5">
                     <div class="col-span-1">
                         <div class="relative">
-                            <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                                class="w-full">
+                            <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                             <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                                 <h4><span class="font-bold">The Bridges</span> by Loko</h4>
                             </div>
@@ -113,8 +114,7 @@
 
                     <div class="col-span-1">
                         <div class="relative">
-                            <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                                class="w-full">
+                            <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                             <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                                 <h4><span class="font-bold">The Bridges</span> by Loko</h4>
                             </div>
@@ -131,8 +131,7 @@
 
                     <div class="col-span-1">
                         <div class="relative">
-                            <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                                class="w-full">
+                            <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                             <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                                 <h4><span class="font-bold">The Bridges</span> by Loko</h4>
                             </div>
@@ -141,8 +140,8 @@
                 </div>
                 <div class="col-span-1">
                     <div class="flex gap-3 mb-3">
-                        <div><img src="{{ asset('assets/images/most-popular-list-1.png') }}" alt=""
-                                class="w-full"></div>
+                        <div><img src="{{ asset('assets/images/most-popular-list-1.png') }}" alt="" class="w-full">
+                        </div>
                         <div>
                             <h4 class="bold">The Bridges by <br><span class="artist-name">Loko</span></h4>
                         </div>
@@ -228,8 +227,7 @@
             <div class="grid grid-cols-3 gap-5">
                 <div class="col-span-1">
                     <div class="relative">
-                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                            class="w-full">
+                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                         <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                             <h4><span class="font-bold">The Bridges</span> by Loko</h4>
                         </div>
@@ -237,8 +235,7 @@
                 </div>
                 <div class="col-span-1">
                     <div class="relative">
-                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                            class="w-full">
+                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                         <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                             <h4><span class="font-bold">The Bridges</span> by Loko</h4>
                         </div>
@@ -246,8 +243,7 @@
                 </div>
                 <div class="col-span-1">
                     <div class="relative">
-                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                            class="w-full">
+                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                         <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                             <h4><span class="font-bold">The Bridges</span> by Loko</h4>
                         </div>
@@ -255,8 +251,7 @@
                 </div>
                 <div class="col-span-1">
                     <div class="relative">
-                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                            class="w-full">
+                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                         <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                             <h4><span class="font-bold">The Bridges</span> by Loko</h4>
                         </div>
@@ -264,18 +259,16 @@
                 </div>
                 <div class="col-span-1">
                     <div class="relative">
-                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                            class="w-full">
+                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                         <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                             <h4><span class="font-bold">The Bridges</span> by Loko</h4>
-                            <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-span-1">
                     <div class="relative">
-                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt=""
-                            class="w-full">
+                        <img src="{{ asset('assets/images/most-popular-album-1.png') }}" alt="" class="w-full">
                         <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center mx-3 album-name">
                             <h4><span class="font-bold">The Bridges</span> by Loko</h4>
                         </div>
@@ -284,7 +277,7 @@
             </div>
         </div>
     </section>
-    
+
 @endsection
 @section('script')
     <script>
