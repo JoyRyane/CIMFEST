@@ -1,0 +1,103 @@
+:root {
+    --white: #F5F5F5;
+    --primary: #4130A0;
+}
+
+@font-face {
+    font-family: 'Helvetica Rounded';
+    src: url('../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf') format('truetype');
+  }
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+}
+
+h1{
+    font-size: 80px !important;
+}
+
+h3{
+    font-size: 38px !important;
+}
+
+h4{
+    font-size: 32px !important;
+}
+
+h5{
+    font-size: 28px !important;
+}
+
+h6 {
+    font-size: 24px !important;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+small{
+    font-size: 15px;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+body, html {
+    min-height: 100vh;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.btn {
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 13px;
+    text-transform: capitalize;
+    transition: ease-in .3s;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid white;
+}
+
+.btn-primary-bold{
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid white;
+    font-weight: 700;
+}
+
+.btn-tertiary{
+    background-color: #EDEFF0;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 12px !important;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 46px !important;
+    }
+    h2 {
+        font-size: 42px !important;
+    }
+    h3 {
+        font-size: 40px !important;
+    }
+    h4 {
+        font-size: 27px !important;
+    }
+    h5 {
+        font-size: 22px !important;
+    }
+}

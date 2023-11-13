@@ -1,0 +1,66 @@
+.navbar{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 35px 190px; 
+}
+.navbar .nav-link{
+    font-size: 16px !important;
+    font-weight: 700;
+}
+.home-intro-wrapper{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.footer-wrapper{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 40px 110px;
+}
+
+.footer{
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+
+.home-wrapper .carousel .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+.most-popular {
+    margin: 80px 0;
+}
+
+.most-popular .album-name {
+    border-radius: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.most-popular .artist-name {
+    color: var(--primary);
+}
+
+.artist-for-you{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.artist-for-you .artist .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-wrapper{
+        padding: 30px 10px;
+    }
+}
