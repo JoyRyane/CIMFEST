@@ -4,7 +4,7 @@
     </div>
     <div class="flex-grow text-center space-x-4">
         <a href="{{ route('home')}}" class="nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
-        {{-- @auth('artist') --}}
+        @auth('artist')
         <a href="{{ route('playlist')}}" class="nav-link {{ Request::is('playlist') ? 'active' : '' }}">Playlist</a>
         <a href="#" class="nav-link ">Notifications</a>
       {{-- @else --}}
