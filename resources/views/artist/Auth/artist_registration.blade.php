@@ -45,7 +45,7 @@
             <span style="color: red;">@error('password'){{$message}}@enderror</span><br><br>
 
             <button type="submit" name="register">Register</button><br><br>
-            <div class="signin">Already have an account? <a href="#" class="login_link">Sign In</a></div>
+            <div class="signin">Already have an account? <a href="{{ route('artist.login')}}" class="login_link">Sign In</a></div>
         </form>
         </div>
         <img src="{{ asset('assets/images/artist_registration.png') }}" alt="registration photo">

@@ -30,31 +30,7 @@ class PageController extends Controller
         return view('artist_registration');
     }
     
-    public function login(){
-        return view('login');
-    }
-    public function create_artist(Request $request){
-        $request->validate([
-            'name'      =>'required',
-            'phone'     =>'required|numeric|min:6',
-            'email'     =>'required|email|unique:artists',
-            'category'  =>'required',
-            'password'  =>'required|min:8'
-        ]);
-        $artist             = new  Artist();
-        $artist->name       = $request->name;
-        $artist->phone      = $request->phone;
-        $artist->email      = $request->email;
-        $artist->category   = $request->category;
-        $artist->password   = Hash::make($request->password);
-        $res   = $artist->save();
-        if($res)
-        {
-            return back()->with('success',"You have registered your data successfully");
-        }else{
-            return back()->with('fail','Something went wrong');
-        }
-    }
+    
 
     public function create_agent(Request $request){
 

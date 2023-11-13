@@ -14,13 +14,6 @@
             <label for="email">Email Address</label><br>
             <input name="email" type="email" placeholder="johndoe@gmail.com"><br><br>
 
-            <label for="category">Category</label><br>
-            <select name="category" id="category">
-                <option value="agent">Agent</option>
-                <option value="label">Label artist</option>
-                <option value="artist">Lone artist</option>
-            </select><br><br>
-
             <label for="password">Password</label><br>
             <input name="password" type="password" placeholder="********"><br><br><br>
 
