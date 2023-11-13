@@ -7,6 +7,11 @@
     font-size: 16px !important;
     font-weight: 700;
 }
+
+.navbar .nav-link.active {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
 .home-intro-wrapper{
     background-color: var(--primary);
     color: var(--white);
@@ -63,4 +68,91 @@
     .footer-wrapper{
         padding: 30px 10px;
     }
+}
+
+.artist-dashboard-intro .music h6{
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.artist-dashboard-upload .upload{
+    gap: 4rem;
+}
+
+.artist-dashboard-upload .upload .header{
+    background-color: var(--primary);
+}
+
+.artist-dashboard-upload .upload-single{
+    background-color: #348C3D;
+    color: var(--white);
+    border-radius: 8px;
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.artist-dashboard-upload .upload-ep{
+    background-color: #87413C;
+    color: var(--white);
+    border-radius: 8px;
+    padding: 50px 10px;
+    text-align: center;
+}
+.artist-dashboard-upload .upload-album{
+    background-color: #A02B71;
+    color: var(--white);
+    border-radius: 8px;
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.artist-dashboard-song{
+    margin-top: 90px;
+}
+
+.album .playlist .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+.album h5,
+.album h4{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.user-dashboard {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.user-dashboard li{
+    margin-bottom: 30px;
+}
+
+.user-dashboard li span{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.user-dashboard  .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+.user-dashboard .create-new-list{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+
+.user-dashboard .create-new-list h1{
+   font-size: 40px !important;
+}
+
+.recommendation .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -80px;
 }
