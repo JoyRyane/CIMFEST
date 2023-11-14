@@ -15,9 +15,19 @@ class RedirectIfNotArtist
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(!auth()->guard('Artist')->check()){
-            return redirect('/login');
+        if(!Auth::guard('artist')->check()){
+            return redirect('artist/login');
         }
         return $next($request);
+       
     }
+    // public function handle($request, Closure $next)
+    // {
+    //     if (!Auth::guard('artist')->check()) {
+    //         return redirect()->route('artist.login');
+    //     }
+
+    //     return $next($request);
+    // }
+
 }
