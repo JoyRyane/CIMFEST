@@ -19,6 +19,7 @@ Route::group(['namespace' => 'Artist', 'prefix' => 'artist', 'as' => 'artist.'],
     Route::get('/register', 'RegisterController@showRegisterForm')->name('register');
     Route::post('/register', 'RegisterController@store')->name('register');
     Route::get('/login', 'LoginController@showLoginForm')->name('login');
+    
     Route::post('/login', 'LoginController@login')->name('login');
     
     
@@ -30,6 +31,14 @@ Route::group(['namespace' => 'Artist', 'prefix' => 'artist', 'as' => 'artist.'],
         Route::get('/playlist', 'ArtistController@playList')->name('playlist');
     });
     Route::post('/logout', 'LoginController@logout')->name('logout');
+});
+
+
+// AGENT ROUTES
+Route::group(['namespace' => 'agent' , 'prefix' => 'agent', 'as' => 'agent.'], function (){
+    Route::get('/register', 'RegisterController@showArtistLoginForm')->name('agent_register');
+    Route::post('/register', 'RegisterController@LogUserin')->name('register');
+    Route::get('/login','LoginController@showLogin')->name('login');
 });
 
 

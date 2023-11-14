@@ -8,27 +8,39 @@ body{
     width: 60%;
     height: 640px;
     justify-content: center;
-    margin-top: 30px;
-    margin-left: 400px;
+    margin-top: 50px;
+    margin-left: 380px;
     border-radius: 10px;
     
 }
 .regImage{
     position: absolute;
-    width: 450px;
-    height: 720px;
-    margin-top: 50px;
-    margin-left:360px;
+    display: flex;
+    width: 500px;
+    max-height: 650px;
+    margin-top:49px;
+    margin-left:375px;
 }
 .container form,.container h2,.container p{
-    margin-left: 450px;
+    margin-left: 540px;
 }
 .container .heading{
     color: black;
-    margin-top: 30px;
+    margin-top: 110px;
     font-size: 36px;
     font-family: Helvetica,Arial,sans-serif;
     font-weight: bold;
+}
+.forgot_password{
+    text-decoration: none;
+    color: #58348C;
+    margin-bottom: 20dp;
+}
+.last_child{
+    margin-bottom: 10px;
+}
+.forgot_password:hover{
+    text-decoration: underline;
 }
 .container .paragraph{
     color: rgba(0, 0, 0, 0.7);

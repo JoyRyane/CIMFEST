@@ -33,4 +33,5 @@ class LoginController extends Controller
 
         return redirect('/artist/login');
     }
+
 }

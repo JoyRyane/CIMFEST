@@ -9,7 +9,7 @@
         <div class="container">
         <p class="heading">Agent Registration</p>
         <p class="paragraph">Make money by creating content for our artist</p>
-        <form action="{{ route('create_agent') }}" method="POST">
+        <form action="{{ route('agent.register') }}" method="POST">
             @if(Session::has('success'))
                 <div style="color: green; background:white;width:81%;">{{Session::get('success')}}</div>
             @endif
@@ -20,29 +20,29 @@
 
             @csrf
             <label for="name">Name</label><br>
-            <input name="name" type="text" placeholder="john doe"><br>
+            <input name="name" value="{{ old('name') }}" type="text" placeholder="john doe"><br>
             <span style="color: red;">@error('name'){{$message}}@enderror</span><br>
 
             <label for="phone">Phone</label><br>
-            <input name="phone" type="number" placeholder="6 77 12 98 34"><br>
+            <input name="phone" value="{{ old('phone') }}" type="number" placeholder="6 77 12 98 34"><br>
             <span style="color: red;">@error('phone'){{$message}}@enderror</span><br>
 
             <label for="email">Email Address</label><br>
-            <input name="email" type="email" placeholder="johndoe@gmail.com"><br>
+            <input name="email" value="{{ old('email') }}" type="email" placeholder="johndoe@gmail.com"><br>
             <span style="color: red;">@error('email'){{$message}}@enderror</span><br>
 
             
             <label for="social_media">Add Social media Handles</label><br>
-            <input name="social_media" type="text" placeholder="snapchat:@renna"><br>
+            <input name="active_social_media_accounts" value="{{ old('active_social_media_accounts') }}" type="text" placeholder="snapchat:@renna"><br>
             <span style="color: red;">@error('social_media'){{$message}}@enderror</span><br>
 
 
             <label for="password">Password</label><br>
-            <input name="password" type="password" placeholder="********"><br>
+            <input name="password" value="{{ old('password') }}" type="password" placeholder="********"><br>
             <span style="color: red;">@error('password'){{$message}}@enderror</span><br>
 
             <label for="password">Confirm Password</label><br>
-            <input name="password_confirmation" type="password" placeholder="********"><br>
+            <input name="password_confirmation" value="{{ old('password_confirmation') }}" type="password" placeholder="********"><br>
             <span style="color: red;">@error('name'){{$message}}@enderror</span><br>
 
             <button type="submit" >Register</button><br>

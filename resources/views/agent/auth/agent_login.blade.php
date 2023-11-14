@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Artist LOGIN</title>
+        <title>Agent LOGIN</title>
         <link href="{{ asset('assets/css/login.css') }}" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-        <p class="heading">Artist Login</p>
+        <p class="heading">Agent Login</p>
         <p class="paragraph">Keep streaming heart warming music</p>
 
-            <form action="{{ route('artist.login') }}" method="POST">
+            <form action="{{route('agent.login')}}" method="POST">
                 @csrf
             <label for="email">Email Address</label><br>
             <input name="email" type="email" placeholder="johndoe@gmail.com"><br><br>

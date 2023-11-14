@@ -33,13 +33,15 @@ class RegisterController extends Controller
         $artist->password   = Hash::make($request->password);
         $res                = $artist->save();
 
-        if ($res) {
+        /*if ($res) {
             // Log in the newly created artist
-            Auth::guard('artist')->login($artist);
+            //Auth::artist('artist')->login($artist);
+            Auth::Artist()->login($artist);
+
 
             return redirect('/artist/dashboard')->with('success', "You have registered your data successfully");
         } else {
             return back()->with('fail', 'Something went wrong');
-        }
+        }*/
     }
 }

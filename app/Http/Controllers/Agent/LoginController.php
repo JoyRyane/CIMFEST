@@ -17,4 +17,7 @@ class LoginController extends Controller
             'email' => 'Invalid login credentials'
         ]);
     }
+    public function showLogin(){
+        return view("agent.auth.agent_login");
+    }
 }
