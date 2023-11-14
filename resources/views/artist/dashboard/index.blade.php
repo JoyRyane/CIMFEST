@@ -110,7 +110,7 @@
     </section>
     <section class="artist-dashboard-upload mb-5">
         <div class="container mx-auto">
-            <div class="my-8">
+            <div class="my-20">
                 <h4>Put Yourself out There</h4>
             </div>
             <div class="grid grid-cols-3 upload">

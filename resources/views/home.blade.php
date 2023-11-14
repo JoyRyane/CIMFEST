@@ -12,8 +12,8 @@
                     <h6 class="text-center md:text-left">The most exciting rhythms seem unexpected and complex, the most
                         beautiful melodies simple and inevitable</h6><br><br>
                     <div class="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start gap-4">
-                        <button class="btn btn-primary">Register an artist</button>
-                        <button class="btn btn-primary-bold">Become an Agent</button>
+                        <a href="{{ route('artist.register') }}" class="btn btn-primary">Register an artist</a>
+                        <a href="" class="btn btn-primary-bold">Become an Agent</a>
                     </div><br><br>
                     <div class="flex items-center gap-4">
                         <img src="{{ asset('assets/images/home-music-img.png') }}" alt="">
