@@ -7,10 +7,10 @@
     </head>
     <body>
         <div class="container">
-        <h2>Agent Login</h2>
-        <p>Keep streaming heart warming music</p>
+        <p class="heading">Agent Login</p>
+        <p class="paragraph">Keep streaming heart warming music</p>
 
-        <form action="#" method="POST">
+        <form action="{{ route('login') }}" method="POST">
             <label for="email">Email Address</label><br>
             <input name="email" type="email" placeholder="johndoe@gmail.com"><br><br>
 

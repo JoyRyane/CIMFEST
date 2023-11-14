@@ -7,8 +7,8 @@
     </head>
     <body>
         <div class="container">
-        <h2>Agent Registration</h2>
-        <p>Make money by creating content for our artist</p>
+        <p class="heading">Agent Registration</p>
+        <p class="paragraph">Make money by creating content for our artist</p>
         <form action="{{ route('create_agent') }}" method="POST">
             @if(Session::has('success'))
                 <div style="color: green; background:white;width:81%;">{{Session::get('success')}}</div>
@@ -47,10 +47,9 @@
 
             <button type="submit" >Register</button><br>
             <div class="signin">Already have an account? <a href="#" class="login_link">Sign In</a></div>
-        
 
         </form>
         </div>
-        <img src="{{ asset('assets/images/agent_registration.png') }}" alt="registration photo">
+        <img class="regImage" src="{{ asset('assets/images/artist_registration.png') }}" alt="registration photo">
     </body>
 </html>

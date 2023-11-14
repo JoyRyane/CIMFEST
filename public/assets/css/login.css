@@ -1,66 +1,100 @@
+body{
+    background: #F5F5F5;
+}
 .container{
     position: absolute;
-    background: #563495;
+    background: #F5F5F5;
     align-items: center;
-    width: 800px;
-    height: 650px;
+    width: 60%;
+    height: 640px;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 400px;
     border-radius: 10px;
     
 }
-img{
+.regImage{
     position: absolute;
-    width: 400px;
-    height: 670px;
-    margin-top: 30px;
-    margin-left:390px;
+    width: 450px;
+    height: 720px;
+    margin-top: 50px;
+    margin-left:360px;
 }
 .container form,.container h2,.container p{
     margin-left: 450px;
 }
-.container h2,.container p{
-    color: white;
+.container .heading{
+    color: black;
+    margin-top: 30px;
+    font-size: 36px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
 }
-.container h2{
-    margin-top: 100px;
+.container .paragraph{
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    margin-top: -30px;
+    margin-bottom: 30px;
 }
 label{
-    color: white;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
 input{
-    width: 80%;
-    border: 1px solid white;
+    width: 81%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    height: 25px;
+    height: 32px;
+    background: #FFFFFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
 }
 button{
-    width: 81%;
-    height: 25px;
-    color: #563495;
-    background: #FFFFFF;
-    border: 1px solid white;
+    width: 82%;
+    height: 50px;
+    color: #FFFFFF;
+    background: #58348C;
+    border: 2px solid #4130A0;
     border-radius: 5px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+::placeholder{
+    
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    padding-left: 5px;
 }
 button:hover{
-    background-color: #563495;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #58348C;
 }
-.sign_up{
-    color: white;
-    margin-left: 20px;
+.signin{
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 12px;
+    font-size: 16px;
+    font-family: Helvetica,Arial,sans-serif;
 }
 
-.sign_up a{
-    color: white;
+.signin a{
+    color: #0D0D0D;
     text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica,Arial,sans-serif;
 }
-.sign_up a:hover{
-    text-decoration: underline;
+.signin a:hover{
+    color: #58348C;
 }
 select{
     width: 82%;
-    height: 30px;
+    height: 50px;
     border-radius:5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    padding-left: 5px;
 }

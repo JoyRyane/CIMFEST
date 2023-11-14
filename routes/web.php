@@ -29,7 +29,7 @@ Route::group(['namespace' => 'Artist', 'prefix' => 'artist', 'as' => 'artist.'],
     });
 });
 
-Route::group(['namespace' => 'web'], function () {
+    Route::group(['namespace' => 'web'], function () {
     Route::get('/', 'PageController@index')->name('home');
     Route::get('/artist_dashboard', 'PageController@artist')->name('artist_dashboard');
     Route::get('/agent_registration', 'PageController@agentRegistration')->name('agent_registration');
