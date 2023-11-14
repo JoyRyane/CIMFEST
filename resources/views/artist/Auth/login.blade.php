@@ -10,7 +10,8 @@
         <h2>Agent Login</h2>
         <p>Keep streaming heart warming music</p>
 
-        <form action="#" method="POST">
+            <form action="{{ route('artist.login') }}" method="POST">
+                @csrf
             <label for="email">Email Address</label><br>
             <input name="email" type="email" placeholder="johndoe@gmail.com"><br><br>
 
@@ -18,7 +19,7 @@
             <input name="password" type="password" placeholder="********"><br><br><br>
 
             <button type="submit" name="login">Login</button><br><br><br>
-            <div class="sign_up">Don't have an account? <a href="#" class="register_link">Sign Up</a></div>
+            <div class="sign_up">Don't have an account? <a href="{{ route('artist.register')}}" class="register_link">Sign Up</a></div>
         </form>
         </div>
         <img src="{{ asset('assets/images/artist_registration.png') }}" alt="registration photo">

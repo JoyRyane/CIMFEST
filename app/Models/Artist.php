@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-use App\Http\Middleware\Authenticate;
+// use App\Http\Middleware\Authenticate;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Artist extends Authenticate
+class Artist extends Authenticatable
 {
     use HasFactory;
     protected $table = "artists";
@@ -15,3 +15,4 @@ class Artist extends Authenticate
         'password',
     ];
 }
+

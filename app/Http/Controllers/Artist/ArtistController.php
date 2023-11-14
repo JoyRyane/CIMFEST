@@ -10,7 +10,7 @@ class ArtistController extends Controller
     //
     public function getDashboard(){
 
-        return view('artist.dashboard');
+        return view('artist.dashboard.index');
     }
 
     public function playList(){

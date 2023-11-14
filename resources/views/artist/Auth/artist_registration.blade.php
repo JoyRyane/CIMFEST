@@ -9,7 +9,7 @@
         <div class="container">
         <h2>Artist Registration</h2>
         <p>Upload your songs to make people feel good</p>
-        <form action="{{route('create_artist')}}" method="POST">
+        <form action="{{route('artist.register')}}" method="POST">
             @if(Session::has('success'))
             <div style="color: green; background:white;width:81%;">{{Session::get('success')}}</div>
             @endif

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Artist;
 
-use auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -13,13 +13,24 @@ class LoginController extends Controller
 
         return view('artist.auth.login');
     }
-    public function login(Request $request){
-        if(auth()->guard('artist')->attempt(['email' => $request->email, 'password' => $request->password])){
-            return redirect()->intended('/dashboard');
-        }
 
+    public function login(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+    
+        if (Auth::guard('artist')->attempt($credentials)) {
+            return redirect()->intended('/artist/dashboard');
+        }
+    
         return redirect()->back()->withErrors([
-            'email' => 'Invalid login credentials'
+            'email' => 'Invalid login credentials',
         ]);
+    }
+
+    public function logout()
+    {
+        Auth::guard('artist')->logout();
+
+        return redirect('/artist/login');
     }
 }

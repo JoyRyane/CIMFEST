@@ -4,7 +4,7 @@
     <section class="user-dashboard">
         <div class="container mx-auto">
             <div class="flex gap-8">
-                <div class="w-2/6 flex justify-center sidebar">
+                <div class="w-2/6 flex justify-center sidebar" style="background-color: rgba(0, 0, 0, 0.2)">
 
                     <div>
                         <div class="relative mb-16">
@@ -124,23 +124,23 @@
                     </div>
                     <h4 class="mb-8">Because You Listened To Unavailable</h4>
                     <div class="owl-carousel owl-theme user-carousel">
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500 ">
                             <img src="{{ asset('assets/images/ep-img-1.png')}}" alt="">
                             <h5>Bridges-2022</h5>
                         </div>
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500 ">
                             <img src="{{ asset('assets/images/album-img-2.png')}}" alt="">
                             <h5>albom abc-2023</h5>
                         </div>
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500 ">
                             <img src="{{ asset('assets/images/album-img-3.png')}}" alt="">
                             <h5>Feelings-2020</h5>
                         </div>
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500 ">
                             <img src="{{ asset('assets/images/album-img-4.png')}}" alt="">
                             <h5>mabakwa man</h5>
                         </div>
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500 ">
                             <img src="{{ asset('assets/images/album-img-2.png')}}" alt="">
                             <h5>albom abc-2023</h5>
                         </div>
@@ -167,23 +167,23 @@
                     </div> --}}
                     <h4 class="mb-8">Because You Listened To Unavailable</h4>
                     <div class="owl-carousel owl-theme recommendation">
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500">
                             <img src="{{ asset('assets/images/ep-img-1.png')}}" alt="">
                             <h5>Bridges-2022</h5>
                         </div>
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500">
                             <img src="{{ asset('assets/images/album-img-2.png')}}" alt="">
                             <h5>albom abc-2023</h5>
                         </div>
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500">
                             <img src="{{ asset('assets/images/album-img-3.png')}}" alt="">
                             <h5>Feelings-2020</h5>
                         </div>
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500">
                             <img src="{{ asset('assets/images/album-img-4.png')}}" alt="">
                             <h5>mabakwa man</h5>
                         </div>
-                        <div class="item">
+                        <div class="item transition ease-in-out delay-75 cursor-pointer  hover:scale-110 duration-500">
                             <img src="{{ asset('assets/images/album-img-2.png')}}" alt="">
                             <h5>albom abc-2023</h5>
                         </div>
